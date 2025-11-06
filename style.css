@@ -1,1 +1,88 @@
-/* Add styles here */
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem; 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  
+
+
+  :root{
+      font-size: 62.5%; }
+
+
+
+  body{
+      font-size: 1.6rem;
+  }
+  header{
+      background-color: rgb(111, 172, 172);
+      color: rgb(117, 98, 219);
+      padding-block: 3rem;
+      position: fixed;
+      width: 100%;
+  
+  }
+  .header-container{
+max-width: 128rem;
+      margin: 0 auto;
+    display: flex;
+      flex-direction: column;
+align-items: center;
+  h1 {
+      margin-block: 2rem;
+      margin-bottom: 1rem;
+  }
+      ul{
+          display: flex;
+          gap: 5rem;
+          list-style: none;
+      
+      }
+     }
+  
+  
+  
+      a {
+          color: white;
+          text-decoration: none;
+      }
+  
+      a:hover {
+
+          transform: scale(1.1);
+          
+          transition: ease-in-out .4s;
+      }
+  
+      main {
+         background-color: rgb(116, 140, 218);
+          min-height: calc(100svh - 11.8rem);
+          padding-block: 15.8rem 4rem;
+         
+      }
+  
+      .main-container {
+      max-width: 120rem;
+      margin: 0 auto;
+      line-height: 2.3rem;
+  }
+  
+  
+  
+   
+
+      
+      h2 {
+          text-align: center;
+          margin-bottom: 2rem;
+         color: black;
+          padding-top: 1rem;
+      }
+      p {
+          color: rgb(17, 15, 15);
+          max-width: 70rem;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 2rem;
+      }

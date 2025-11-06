@@ -1,14 +1,49 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Position noCSS</title>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <header>
+    <div class="header-container">
+      
+      <nav>
+        <ul>
+                                                           
+            <li><a href="">Home</a></li>
+
+
+          <li><a href="#position">Position:static</a></li>
+
+
+          <li><a href="#absolute">Position:absolute</a></li>
+
+
+          <li><a href="#fixar">Position:fixed</a></li>
+        </ul>
+      </nav>
+
+      <h1>Position no CSS</h1> 
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="position">Position: static</h2>
+      <p>A propriedade position: static em CSS é o valor padrão aplicado a todos os elementos HTML e define que eles serão posicionados conforme o fluxo normal da página. Isso significa que cada elemento ocupa seu espaço de forma natural, de acordo com a ordem em que aparece no código, respeitando o modelo de caixa e a disposição dos outros elementos. Quando um elemento está com o posicionamento estático, ele não pode ser movido manualmente por meio das propriedades top, right, bottom ou left, pois essas instruções são ignoradas pelo navegador. Esse tipo de posicionamento mantém o elemento dentro do fluxo do documento, sem sobreposição ou alteração de camadas, e sua posição depende apenas da estrutura e da hierarquia do HTML. É o comportamento mais comum e previsível, ideal para elementos que não precisam de ajustes manuais de posição, garantindo que o layout permaneça organizado, fluido e consistente.</p>
+      
+      <h2 id="absolute">Position: absolute</h2>
+      <p>A propriedade position: absolute em CSS é usada para posicionar um elemento de forma precisa dentro da página, retirando-o completamente do fluxo normal do documento. Isso significa que o elemento deixa de influenciar o posicionamento dos demais e pode ser movido livremente usando as propriedades top, right, bottom e left, que definem sua distância em relação às bordas do contêiner de referência. Esse contêiner é sempre o primeiro elemento ancestral que tenha uma posição diferente de static; se nenhum for encontrado, o posicionamento será feito em relação à página inteira. Esse tipo de posicionamento é muito útil para criar elementos sobrepostos, menus suspensos, caixas flutuantes, legendas ou detalhes visuais que precisam de precisão. No entanto, é importante utilizá-lo com cuidado, pois, por estar fora do fluxo, pode dificultar a responsividade e a organização do layout, exigindo planejamento para manter a harmonia e o alinhamento dos elementos na página.</p>
+
+      <h2 id="fixar">Position: fixed</h2>
+      <p>A propriedade position: fixed em CSS é utilizada para fixar um elemento em uma posição específica da tela, independentemente do deslocamento da página durante a rolagem. Isso significa que, mesmo que o usuário role para cima ou para baixo, o elemento permanecerá visível no mesmo lugar, sempre preso à janela de visualização (viewport). O posicionamento é feito com base nas propriedades top, right, bottom e left, que definem a distância do elemento em relação às bordas da tela. Como o elemento é removido do fluxo normal do documento, ele não afeta nem é afetado pelos outros elementos da página. Esse tipo de posicionamento é muito utilizado em elementos que precisam estar sempre acessíveis, como barras de navegação fixas, botões de retorno ao topo, cabeçalhos flutuantes e rodapés fixos. No entanto, é importante usá-lo com moderação, pois muitos elementos fixos podem sobrepor o conteúdo principal e prejudicar a experiência do usuário, especialmente em telas menores.</p>
+    
+
+
+  </main>
 </body>
-</html>
+</html>     
